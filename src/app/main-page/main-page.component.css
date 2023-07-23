@@ -1,29 +1,56 @@
 /* Styles for the button container */
 .button-container {
-    display: flex;
-    justify-content: center; /* Center the buttons horizontally */
-    margin-bottom: 200px;
-    height: 50px;
- width: 600px;
- margin-left: 50px;
-  }
-  
-  /* Styles for the buttons */
-  .button-container button {
-    padding: 10px 20px;
-    justify-content: center;
-    border: none;
-    border-radius: 20px; /* Adjust the radius for round corners */
-    background-color: #3498db; /* Set the background color of the buttons */
-    color: #fff; /* Set the text color of the buttons */
-    font-size: 16px; /* Adjust the font size of the buttons */
-    margin: 5px; /* Add spacing between the buttons */
-    cursor: pointer;
+  display: flex;
+  flex-direction: column; /* Set the buttons to be in a vertical column */
+  align-items: center; /* Center the buttons horizontally */
+  margin-bottom: 200px;
+  width: fit-content; /* Adjust the container width to fit the buttons' content */
+  margin-left: 50px;
+  margin-top: 50px;
+}
+h1 {
     
-  }
+  color: #3498db; /* Set the text color to white */
+  font-size: 32px;
+  margin-left: 50px;
+ 
+}
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  margin-left: 40px;
   
-  /* Hover effect for buttons */
-  .button-container button:hover {
-    background-color: #2980b9; /* Change the background color on hover */
-  }
+ 
+}
+
+/* Style the search input */
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid#3498db;
+  border-radius: 15px;
+  outline: none;
+  width: 450px;
+  color: #3498db;
+}
+/* Styles for the buttons */
+.button-container button {
   
+  padding: 10px 20px;
+  display: block; /* Set the buttons to occupy the full width of the container */
+  border: none;
+  border-radius: 20px; /* Adjust the radius for round corners */
+  background-color: #3498db; /* Set the background color of the buttons */
+  color: #fff; /* Set the text color of the buttons */
+  font-size: 25px; /* Adjust the font size of the buttons */
+  margin: 5px; /* Add spacing between the buttons */
+  cursor: pointer;
+  width: 500px;
+}
+
+/* Hover effect for buttons */
+.button-container button:hover {
+  background-color: #2980b9; /* Change the background color on hover */
+}

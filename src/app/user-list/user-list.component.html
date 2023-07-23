@@ -1,5 +1,8 @@
+<h1>Users List</h1>
 <div fxLayout="row wrap" fxLayoutGap="16px">
+  
   <div *ngFor="let user of users" class="user-card">
+    
     <div class="user-info">
       <div><strong>First Name:</strong> {{ user.FirstName }}</div>
       <div><strong>Last Name:</strong> {{ user.LastName }}</div>
@@ -11,7 +14,6 @@
     </div>
     <div class="user-buttons">
       <button (click)="userDetail(user)">Details</button>
-    
     </div>
   </div>
 </div>

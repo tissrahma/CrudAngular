@@ -1,6 +1,12 @@
+<h1>Welcome to User Management App</h1>
+
+<div class="search-container">
+  <input type="text" class="search-input" placeholder="Search users..." (input)="onSearch($any($event.target).value)">
+</div>
+
 <div class="button-container">
   <button (click)="showUsers()">Show Users</button>
   <button (click)="addUser()">Add User</button>
-  
 </div>
+
 <router-outlet></router-outlet>
