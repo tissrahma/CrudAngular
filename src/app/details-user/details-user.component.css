@@ -1,0 +1,41 @@
+.centered-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    height: 100vh;
+   
+     /* This will center the content vertically on the screen */
+  }
+  
+  .user-details {
+    margin-bottom: 200px;
+    text-align: center;
+    border: 1px solid #ccc;
+    padding: 16px;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  
+  button {
+    padding: 8px 16px;
+    margin: 0 8px;
+  }
+  
+  .update-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+  }
+  
+  .delete-button {
+    background-color: #e74c3c;
+    color: #fff;
+    border: none;
+  }
+  

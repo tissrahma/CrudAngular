@@ -1,0 +1,20 @@
+<div class="centered-container">
+  <div *ngIf="user" class="user-details">
+    <h2>User Details</h2>
+    <p><strong>First Name:</strong> {{ user.FirstName }}</p>
+    <p><strong>Last Name:</strong> {{ user.LastName }}</p>
+    <p><strong>Age:</strong> {{ user.Age }}</p>
+    <p><strong>Sex:</strong> {{ user.Sex }}</p>
+    <!-- Add other user details here -->
+
+    <div class="buttons">
+      <button class="update-button" (click)="onUpdate(user)">Update</button>
+      <button class="delete-button" (click)="onDelete(user)">Delete</button>
+    </div>
+  </div>
+  <div *ngIf="!user" class="loading-message">
+    <p>Loading user details...</p>
+  </div>
+</div>
+
+

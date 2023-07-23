@@ -1,0 +1,29 @@
+/* Styles for the button container */
+.button-container {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-bottom: 200px;
+    height: 50px;
+ width: 600px;
+ margin-left: 50px;
+  }
+  
+  /* Styles for the buttons */
+  .button-container button {
+    padding: 10px 20px;
+    justify-content: center;
+    border: none;
+    border-radius: 20px; /* Adjust the radius for round corners */
+    background-color: #3498db; /* Set the background color of the buttons */
+    color: #fff; /* Set the text color of the buttons */
+    font-size: 16px; /* Adjust the font size of the buttons */
+    margin: 5px; /* Add spacing between the buttons */
+    cursor: pointer;
+    
+  }
+  
+  /* Hover effect for buttons */
+  .button-container button:hover {
+    background-color: #2980b9; /* Change the background color on hover */
+  }
+  

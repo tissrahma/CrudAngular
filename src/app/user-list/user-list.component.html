@@ -1,0 +1,17 @@
+<div fxLayout="row wrap" fxLayoutGap="16px">
+  <div *ngFor="let user of users" class="user-card">
+    <div class="user-info">
+      <div><strong>First Name:</strong> {{ user.FirstName }}</div>
+      <div><strong>Last Name:</strong> {{ user.LastName }}</div>
+      <div><strong>Age:</strong> {{ user.Age }}</div>
+      <div><strong>Sex:</strong> {{ user.Sex }}</div>
+    </div>
+    <div class="user-image">
+      <img [src]="user.Image" height="100" width="100">
+    </div>
+    <div class="user-buttons">
+      <button (click)="userDetail(user)">Details</button>
+    
+    </div>
+  </div>
+</div>

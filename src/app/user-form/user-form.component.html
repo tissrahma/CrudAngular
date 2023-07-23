@@ -1,0 +1,35 @@
+<div class="heading-container">
+  <h2>Add User</h2>
+</div>
+<div class="form-container">
+  <form [formGroup]="userForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label>First Name:</label>
+      <input type="text" formControlName="FirstName" required>
+    </div>
+    <div class="form-group">
+      <label>Last Name:</label>
+      <input type="text" formControlName="LastName" required>
+    </div>
+    <div class="form-group">
+      <label>Age:</label>
+      <input type="number" formControlName="Age" required>
+    </div>
+    <div class="form-group">
+      <label>Sex:</label>
+      <select formControlName="Sex" required>
+        <option value="">Select</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Image:</label>
+      <input type="file" (change)="onFileDropped($event)" accept="image/*">
+    </div>
+    <div class="submitButton">
+      <button type="submit" [disabled]="userForm.invalid">Submit</button>
+
+    </div>
+     </form>
+</div>
